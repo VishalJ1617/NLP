@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title> The Sentiment Analysis Output</title>
+    </head>
+    <body>
+        <h1 style="color: purple"> The Sentiment Analysis</h1>
+    <h5> Your message:{{data["message"]}}</h5>
+    {% if data["review"]=="POSITIVE" %}
+    <h2 style="color:blue">Positive Review!</h2>
+    {%  else %}
+    <h2 style="color:red">Negative Review!</h2>
+    {% endif %}
+    </body>
+</html>
